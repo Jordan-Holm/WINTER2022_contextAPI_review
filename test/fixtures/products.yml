@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pname: MyString
+  desc: MyText
+  price: 1.5
+  item_type: one
+
+two:
+  pname: MyString
+  desc: MyText
+  price: 1.5
+  item_type: two
