@@ -3,7 +3,7 @@ class Api::ItemTypesController < ApplicationController
   before_action :set_item, only: [ :show, :update, :destroy ]
 
   def index
-    render json: Item_type.all
+    render json: ItemType.all
   end
 
   def show
@@ -12,7 +12,7 @@ class Api::ItemTypesController < ApplicationController
 
   def create
 
-    @item_type = Item_type.new(item_params)
+    @item_type = ItemType.new(item_params)
 
     if @item_type.save
       render json: @item_type
@@ -42,7 +42,7 @@ class Api::ItemTypesController < ApplicationController
   private
 
     def set_item
-      @item_type = Item_type.find(params[:id])
+      @item_type = ItemType.find(params[:id])
     end
 
     def item_params
